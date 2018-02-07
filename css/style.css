@@ -1,3 +1,18 @@
+@font-face {
+    font-family: 'gidoleregular';
+    /* src: url('css/fonts/gidole-regular-webfont.eot'); */
+    src: url('fonts/gidole-regular-webfont.woff2') format('woff2'),
+         url('fonts/gidole-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+h1 {
+	font-family: 'gidoleregular', Arial, sans-serif;
+	font-size: 34px; 
+}
+
 .search-wrapper {
 	
 }
@@ -16,25 +31,3 @@
 	
 }
 
-.dropdown-wrapper {
-	position: absolute;
-    background-color: #f6f6f6;
-    min-width: 230px;
-    border: 1px solid #ddd;
-    z-index: 1;
-}
-
-.dropdown-wrapper a {
-    color: black;
-    padding: 5px 10px;
-    text-decoration: none;
-    display: block;
-}
- 
-.dropdown-wrapper a:hover {
-	background-color: #f1f1f1
-}
-
-.dropdown-hidden{
-	
-}
