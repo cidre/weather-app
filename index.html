@@ -9,10 +9,15 @@
   </head>
   <body>
     <div id="content">
-      <div class="search-wrapper">
-        <input type="text" placeholder="Search.." id="cityInput" onkeyup="processCityInput(event)">
-      </div>
-      <div class="mainCity" id="mainCity">
+      <div class="main-panel">
+        <div class="search-wrapper">
+          <input type="text" placeholder="Search.." id="cityInput" onkeyup="processCityInput(event)">
+        </div>
+        <div class="mainCity" id="mainCity">
+        </div>
+        <div id="left-panel">
+          <a href="#" onclick="showLeftPanel();" class="controller">&gt;</a>
+        </div>
       </div>
     </div>
     <script src="js/app.js"></script>	

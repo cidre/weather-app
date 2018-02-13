@@ -12,6 +12,7 @@ const doc = {};
 
 doc.input = document.getElementById("cityInput");
 doc.mainCity = document.getElementById('mainCity');
+doc.leftPanel = document.getElementById('left-panel');
 
 const weatherData = [];
 
@@ -99,4 +100,8 @@ function processCityInput(e){
         .then(addToRecentList)
         .catch(e => alert(e))
     }
+}
+
+function showLeftPanel(){
+    doc.leftPanel.classList.toggle("show");
 }
