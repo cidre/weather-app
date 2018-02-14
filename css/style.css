@@ -13,10 +13,11 @@
 	width: 300px;
 	background: yellow;
 	border: 2px solid blue;
-    border-radius: 5px;
+    border-radius: 15px;
     margin: auto;
     position: relative;
     z-index: 2;
+    /*overflow: hidden; */
 }
 
 #left-panel {
@@ -29,6 +30,7 @@
     top: 20px;
     right: -30px;
     z-index: 1;
+    -webkit-transition: all 1.5s ease-in-out;
 }
 
 #left-panel:hover {
@@ -54,19 +56,33 @@
   -webkit-transform: rotate(180deg);
 }
 
+.mainCity {
+	background: lightblue;
+	height: 70%;
+    position: relative;
+    z-index: 2;
+    border-radius: 0px 0px 12px 12px;
+}
+
 .mainCity h1 {
 	font-family: 'gidoleregular', Arial, sans-serif;
 	font-size: 34px; 
+	margin: 0px;
 }
 
 .search-wrapper {
 	margin: auto;
 	background: green;
+	height: 30%;
+	position: relative;
+    z-index: 2;
+    border-radius: 12px 12px 0px 0px;
 }
 
 #cityInput {
-    margin: auto;
+    margin: 0 auto;
     border-box: box-sizing;
+    display: block;
 /* background-image: url('searchicon.png');
   background-position: 14px 12px;
   background-repeat: no-repeat;  */
